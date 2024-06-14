@@ -11,6 +11,8 @@ body {
 
 :root {
     font-size:62.5%;
+    --default-border: 0.1rem solid rgba(0, 0, 0, 0.15);
+    --default-border-radius: 1.2rem;
 }
 
 .content {
@@ -51,9 +53,9 @@ aside img {
 main {
     width: 60rem;
     height: 52rem;
-    border: 0.1rem solid rgba(0, 0, 0, 0.15);
+    border: var(--default-border);
     padding: 4.4rem 5.7rem;
-    border-radius: 1.2rem;
+    border-radius:var(--default-border-radius);
 }
 
 main h2 {
@@ -71,7 +73,7 @@ main .actions a{
     background-color:aquamarine;
     height: 5.5rem;
     font-size: 2.4rem;
-    border-radius: 1.2rem;
+    border-radius:var(--default-border-radius);
     text-decoration: none;
     color: #000;
     
@@ -86,6 +88,19 @@ main .actions a + a {
     margin-top: 4.8rem;
 } 
 
+main header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    gap: 1.8rem;
+}
+
+main header i {
+    color:rgb(17, 29, 197) ;
+    font-size: 3rem;
+}
+
 main footer p {
     font-size: 1.6rem;
     margin-top: 1rem;
@@ -97,4 +112,44 @@ main footer a {
     display: block;
     text-align: center;
     color: #000;
+}
+
+main form  {
+    margin-top: 1.6rem;
+}
+
+main form label {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+main form input, select{
+    width: 48.9rem;
+    height: 5.5rem;
+
+
+    background-color: #fff;
+    border: var(--default-border);
+    border-radius:var(--default-border-radius);
+}
+
+main form select {
+    appearance: none;
+}
+
+main form .select-div {
+    position: relative;
+}
+
+main form .select-div::after{
+    content: '\f078';
+    font-size: 4rem;
+    font-family: 'Font Awesome 6 Free';
+    font-weight:600;
+    position: absolute;
+    left: 44rem;
+    bottom: 0.8rem ;
+    color:rgb(17, 29, 197) ;
 }
