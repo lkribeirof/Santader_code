@@ -3,13 +3,13 @@ import './styles/App.css';
 
 import { Navbar } from "./components/navbar/navbar.jsx";
 import { Article } from "./components/article/Article.jsx";
-import { Counter } from "./components/counter/Counter.jsx";
 
 import article1Img from './assets/images/article1.svg'
 import article2Img from './assets/images/article2.svg'
 import article3Img from './assets/images/article3.svg'
 
 
+// import { Counter } from "./components/counter/Counter.jsx";  CONTADOR QUE N VAMOS UTILIZAR
 
 // Componente em classe é uma classe que herda a classe //Component do React, e retorna HTML dentro do metodo render
 
@@ -28,7 +28,7 @@ class App extends React.Component {
       <> 
           <Navbar />
 
-          <Counter />
+          {/* <Counter /> */}
         
         <section id="articles">
           <Article 
