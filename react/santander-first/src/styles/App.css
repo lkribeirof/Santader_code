@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size:62.5%;
+}
+
+* body {
+    background-color: #222;
+    color: #fff;
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+section#articles {
+    margin: 4rem auto;
+    padding: 0 2rem;
+    max-width: 124rem;
+    
+    display: flex;
+    flex-direction: column;
+
+    gap: 4.6rem;
+}
